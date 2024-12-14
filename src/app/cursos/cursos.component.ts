@@ -10,32 +10,25 @@ export class CursosComponent {
 
   cursos = [
     {
-      imagen: 'assets/image/fondo-2.jpg',
+      imagen: 'assets/image/im-angular.png',
       nombre: 'Curso de Angular',
       descripcion: 'Aprende los fundamentos de Angular desde cero.',
     },
     {
-      imagen: 'assets/image/fondo-3.jpg',
+      imagen: 'assets/image/im-react.png',
       nombre: 'Curso de React',
       descripcion: 'Domina React para construir aplicaciones web modernas.',
     },
     {
-      imagen: 'assets/image/fondo-4.jpg',
+      imagen: 'assets/image/im-nodejs.png',
       nombre: 'Curso de Node.js',
       descripcion: 'Crea aplicaciones backend con Node.js y Express.',
     },
     {
-      imagen: 'assets/image/fondo-6.jpg',
+      imagen: 'assets/image/im-python.png',
       nombre: 'Curso de Python',
       descripcion: 'Aprende Python para ciencia de datos y automatización.',
     },
   ];
-
-  // Método para filtrar los cursos
-  cursosFiltrados() {
-    return this.cursos.filter((curso) =>
-      curso.nombre.toLowerCase().includes(this.filtro.toLowerCase())
-    );
-  }
 }
 
