@@ -1,0 +1,250 @@
+body {
+  background-image: url("../img/fondo-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-color: rgba(143, 153, 179, 0.5);
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  width: 100%;
+  border: 1px solid #f0e9f2;
+  box-sizing: border-box;
+}
+
+.box-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 210px;
+}
+
+.box-logo img {
+  padding-left: 5px;
+  height: 50px;
+}
+
+.box-search {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+}
+
+.box-search input {
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 40px;
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-style: none;
+}
+
+.box-search img {
+  height: 33px;
+  width: 35px;
+}
+
+.box-search button {
+  border: 1px solid #f0e9f2;
+  height: 42px;
+  width: 45px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #83d900;
+}
+
+.box-search button:hover {
+  background-color: #5050ee;
+  border-style: dashed;
+  border-color: #f0e9f2;
+}
+
+.box-home {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+}
+
+.box-home button {
+  font-size: large;
+  font-weight: bold;
+  border-style: none;
+  background-color: #83d900;
+  color: #1d2e49;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.box-home button:hover {
+  padding: 10px 25px;
+  background-color: #5050ee;
+  border-style: dashed;
+  border-color: #f0e9f2;
+  color: #ffffff;
+}
+
+.box-login {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  width: 300px;
+  background-color: rgba(143, 153, 179, 0.5);
+  border: 1px solid #f0e9f2;
+  text-align: center;
+}
+
+.box-login img {
+  margin-top: 25px;
+  border-radius: 110px;
+  height: 100px;
+  width: 105px;
+}
+
+.box-login label {
+  font-weight: bold;
+  font-size: large;
+  color: #ffffff;
+}
+
+.box-login input {
+  text-align: center;
+  height: 30px;
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.box-login input:focus {
+  background-color: rgba(117, 240, 231, 0.8);
+}
+
+.btn-secundary {
+  font-size: large;
+  font-weight: bold;
+  border-style: none;
+  background-color: #83d900;
+  color: #1d2e49;
+  width: 165px;
+  margin-top: 50px;
+  padding: 10px;
+  cursor: pointer;
+}
+.btn-secundary:hover {
+  background-color: #5050ee;
+  border-style: dashed;
+  border-color: #f0e9f2;
+  color: #ffffff;
+}
+
+a {
+  text-align: center;
+  color: #45b2ed;
+}
+
+footer {
+  padding: 100px;
+  text-align: center;
+  color: #c9c9ff;
+  font-weight: bold;
+  font-size: small;
+}
+
+/*Diseño responsive para dispositivos móviles*/
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .box-logo {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .box-search {
+    width: 100%;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .box-search input {
+    width: 90%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+  }
+
+  .box-search button {
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  .box-home {
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .box-home button {
+    width: 90%;
+  }
+
+  .box-login {
+    width: 90%;
+    height: auto;
+    margin-top: 50px;
+    padding: 20px;
+  }
+
+  .box-login img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .box-login input {
+    width: 100%;
+  }
+
+  .btn-secundary {
+    width: 100%;
+  }
+
+  footer {
+    padding: 20px;
+    font-size: x-small;
+  }
+}
+
+/* Para pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+  header {
+    padding: 5px;
+  }
+
+  .box-search input {
+    font-size: 14px;
+  }
+
+  .btn-secundary {
+    font-size: medium;
+  }
+
+  footer {
+    font-size: xx-small;
+  }
+}

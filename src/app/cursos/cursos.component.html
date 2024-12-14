@@ -1,0 +1,12 @@
+<div class="caja-cursos">
+  <input type="text" placeholder="Filtrar curso" class="input-filtro" />
+  <div class="grid-cursos">
+    <div class="card-curso">
+      @for (curso of cursos; track $index) {
+      <img src="{{ curso.imagen }}" alt="" />
+      <h3>{{ curso.nombre }}</h3>
+      <p>{{ curso.descripcion }}</p>
+      }
+    </div>
+  </div>
+</div>

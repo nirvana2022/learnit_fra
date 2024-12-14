@@ -1,0 +1,44 @@
+.caja-cursos {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+}
+
+.grid-cursos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card-curso {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card-curso:hover {
+  transform: translateY(-10px);
+}
+
+.card-curso img {
+  margin-top: 15px;
+  width: 20%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-curso h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.card-curso p {
+  padding: 10px;
+  font-size: 14px;
+  color: #ffffff;
+}

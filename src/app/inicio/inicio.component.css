@@ -1,0 +1,44 @@
+.caja-principal {
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+}
+
+img {
+  height: 47px;
+  margin: 8px;
+  width: 150px;
+}
+
+.btn-left {
+  margin-right: 8px;
+  margin-left: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  margin: 8px;
+  margin-left: auto; /* Dejar el boton a la derecha */
+  padding: 15px;
+  width: 100px;
+  border-style: none;
+  background-color: #83d900;
+  color: black;
+  font-size: medium;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: blueviolet;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cursos {
+  margin-right: auto;
+  background-color: #3f007a;
+  color: white;
+}
